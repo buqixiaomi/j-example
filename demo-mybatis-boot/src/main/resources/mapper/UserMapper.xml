@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.buqixiaomi.demo.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="cn.buqixiaomi.demo.entity.User">
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="oper_status" jdbcType="TINYINT" property="operStatus" />
+    <result column="oper_time" jdbcType="BIGINT" property="operTime" />
+  </resultMap>
+  <insert id="insert" parameterType="cn.buqixiaomi.demo.entity.User">
+    insert into user (user_id, user_name, oper_status, 
+      oper_time)
+    values (#{userId,jdbcType=BIGINT}, #{userName,jdbcType=VARCHAR}, #{operStatus,jdbcType=TINYINT}, 
+      #{operTime,jdbcType=BIGINT})
+  </insert>
+</mapper>

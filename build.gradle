@@ -1,0 +1,30 @@
+group 'cn.buqixiaomi'
+version '1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    //指定编译编译.java文件的jdk版本
+    sourceCompatibility = 1.8
+    //确保class文件与targetCompatibility指定版本，或者更新的java虚拟机兼容
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenLocal()/*本地*/
+        mavenCentral()
+        maven {/*阿里云*/
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven{
+            url 'http://central.maven.org/maven2/'
+        }
+        maven {
+            url 'https://repo.spring.io/libs-milestone'
+        }
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+}
+
