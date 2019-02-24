@@ -1,3 +1,4 @@
 rootProject.name = 'j-example'
 include('demo-mybatis-boot')
+include('demo-jdk8')
 
