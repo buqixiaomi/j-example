@@ -1,6 +1,5 @@
 package cn.buqixiaomi.demo.jdk8.thread;
 
-import buqixiaomi.learn.java8.base.OuterClass;
 
 /**
  * description

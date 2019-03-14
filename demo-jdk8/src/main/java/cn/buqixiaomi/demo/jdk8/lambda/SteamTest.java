@@ -1,6 +1,7 @@
 package cn.buqixiaomi.demo.jdk8.lambda;
 
-import buqixiaomi.learn.java8.lambda.pojo.Dish;
+
+import cn.buqixiaomi.demo.jdk8.lambda.pojo.Dish;
 
 import java.util.Arrays;
 import java.util.List;

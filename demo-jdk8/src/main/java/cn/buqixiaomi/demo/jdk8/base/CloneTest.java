@@ -1,7 +1,9 @@
 package cn.buqixiaomi.demo.jdk8.base;
 
 
-import buqixiaomi.learn.java8.TestBean;
+
+
+import cn.buqixiaomi.demo.jdk8.TestBean;
 
 import java.util.ArrayList;
 
